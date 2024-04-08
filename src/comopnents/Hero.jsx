@@ -52,7 +52,7 @@ const Hero = () => {
 
             <div className=' rounded-lg h-[620px]  bg-transperent col-span-2' >
 
-                <div className='bg-white rounded-lg items-center justify-center h-full grid grid-rows-10'>
+                <div className='bg-gray-200 rounded-lg items-center justify-center h-full grid grid-rows-10'>
 
                     <AnimatedDiv />
 
