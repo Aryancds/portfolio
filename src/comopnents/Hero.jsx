@@ -1,54 +1,146 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaCalendarAlt, FaDownload } from 'react-icons/fa';
+import { IoMdDownload } from 'react-icons/io';
+import { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
 
+
+
+const AnimatedDiv = () => {
+    const bgImageRef = useRef(null);
+
+    useEffect(() => {
+        gsap.from(bgImageRef.current, { y: -200, duration: 1, ease: 'power3.out' });
+    }, []);
+
+    useEffect(() => {
+        gsap.to(bgImageRef.current, { y: 0, duration: 1, ease: 'power3.out' });
+    }, []);
+
+    return (
+        <div className="p-12 rounded-sm sm:p-8 row-span-2" ref={bgImageRef}>
+            <div className="p-2 bg-stone-400 rounded">
+                <img className="" src="/src/assets/bgmaina.jpg" alt="Example" />
+            </div>
+        </div>
+    );
+};
 
 const Hero = () => {
+
+
     return (
-        <div className='p-4 mt-20 grid grid-cols-12 space-x-4 max-w-screen'>
+        <div className='mx-4 mt-20 sm:grid grid-cols-12 space-x-4 max-w-screen'>
 
-            <div className=' rounded-lg h-[600px]  bg-slate-200 col-span-2'>
+            <div className=' rounded-lg h-[620px]  bg-transperent col-span-2'>
 
-                <div className='bg-blue-200 items-center justify-center h-full grid grid-rows-8'>
+                <div className='bg-white rounded-lg items-center justify-center h-full grid grid-rows-10'>
 
-                    <div className='rounded-lg row-span-1 '>
-                        <img className='h-36 rounded-sm' src="/src/assets/bgmaina.jpg" alt="Example" />
-                    </div>
+                    <AnimatedDiv />
 
-                    <div className='text-xl text-center font-mono mt-2 row-span-3'>
+                    <div className='row-span-3 text-center font-mono  '>
 
-                        <span className='text-2xl'> Aryan Patel</span>
+                        <div justify-center items-center>
 
-                        <div className='justify-center items-center p-2 grid grid-rows-2'>
+                            <div className='text-2xl mt-4'> Aryan Patel</div>
 
-                            <div className='text-[15px] rounded w-max justify-center items-center px-2 bg-slate-400'>
-                                WEB Developer
+                            <div className=' justify-center items-center space-y-2 grid grid-rows-2'>
+
+                                <div className='rounded justify-center items-center bg-stone-400 '>
+                                    Web Developer
+                                </div>
+
+                                <div className='flex justify-center items-center space-x-2 '>
+
+                                    <div className='bg-stone-400 p-2 rounded-xl'><FaFacebook /></div>
+                                    <div className='bg-stone-400 p-2 rounded-xl'><FaTwitter /></div>
+                                    <div className='bg-stone-400 p-2 rounded-xl'><FaLinkedin /></div>
+                                    <div className='bg-stone-400 p-2 rounded-xl'><FaGithub /></div>
+
+                                </div>
+
                             </div>
 
-                            <div className='flex justify-center items-center space-x-4'>
+                        </div>
 
-                                <div><FaFacebook /></div>
-                                <div><FaTwitter /></div>
-                                <div><FaLinkedin /></div>
-                                <div><FaGithub /></div>
+                    </div>
 
+                    <div className='row-span-4 font-mono h-full'>
+
+                        <div className='grid grid-row-4 justify-center items-center space-y-4'>
+                            <div className="flex row-span-1 items-center bg-stone-400 rounded-xl p-2">
+                                <FaPhone className="text-xl" />
+                                <div className="ml-2">9484534949</div>
+                            </div>
+                            <div className="flex row-span-1 items-center bg-stone-400 rounded-xl p-2">
+                                <FaEnvelope className="text-xl" />
+                                <div className="ml-2">art3miz07@gmail.com</div>
+                            </div>
+                            <div className="flex row-span-1 items-center bg-stone-400 rounded-xl p-2">
+                                <FaMapMarkerAlt className="text-xl" />
+                                <div className="ml-2">Surat, Gujarat</div>
+                            </div>
+                            <div className="flex row-span-1 items-center bg-stone-400 rounded-xl p-2">
+                                <FaCalendarAlt className="text-xl" />
+                                <div className="ml-2">18/08/2003</div>
                             </div>
                         </div>
 
                     </div>
-                    <div className='row-span-3'>
-                        <div className='h-64 bg-slate-500'>
-                            phone
-                        </div>
+
+                    <div className='row-span-1 flex justify-center items-center'>
+                        <button className="bg-stone-500 hover:bg-stone-700 text-white font-bold py-2 px-4 rounded">
+                            <IoMdDownload className="w-6 h-6 inline-block" />
+                            <span className='font-mono'>Download CV</span>
+                        </button>
                     </div>
 
                 </div>
 
             </div>
-            <div className='p-4 rounded-lg bg-transperent col-span-8'>
-                hello
+
+            <div className='p-4 items-center rounded-lg col-span-8 '>
+                <div className='text-center'>
+
+                    <h1 className='text-2xl font-mono p-4 '>Projects</h1>
+
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+
+                        <div className="bg-gray-200 p-4 rounded-md h-full">
+                            <h2 className="text-xl font-bold mb-2">Diamond Price Calculation Software</h2>
+                            <p className="text-gray-600">Overview: The Diamond Price Calculation Software is a comprehensive tool designed for jewelers, gemologists, and diamond traders to accurately calculate the price of diamonds based on various factors such as carat weight, cut, color, clarity, and market trends.</p>
+                        </div>
+
+                        {/* <div className="bg-gray-200 p-4 rounded-md">
+                            <h2 className="text-xl font-bold mb-2">Project 2</h2>
+                            <p className="text-gray-600">Details about Project 2</p>
+                        </div>
+
+                        
+                        <div className="bg-gray-200 p-4 rounded-md">
+                            <h2 className="text-xl font-bold mb-2">Project 3</h2>
+                            <p className="text-gray-600">Details about Project 3</p>
+                        </div>
+
+                        
+                        <div className="bg-gray-200 p-4 rounded-md">
+                            <h2 className="text-xl font-bold mb-2">Project 4</h2>
+                            <p className="text-gray-600">Details about Project 4</p>
+                        </div>  */}
+
+                    </div>
+
+                </div>
             </div>
-            <div className='p-4 rounded-lg bg-slate-200 col-span-2'>
-                hiii
+
+
+            <div className='p-4 rounded-lg col-span-2'>
+
+                <div>
+
+                </div>
+
             </div>
 
         </div>
