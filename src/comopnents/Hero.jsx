@@ -21,7 +21,7 @@ const AnimatedDiv = () => {
     return (
         <div className="p-12 rounded-sm sm:p-8 row-span-2" ref={bgImageRef}>
             <div className="p-2 bg-stone-400 rounded">
-                <img className="" src="/src/assets/bgmaina.jpg" alt="Example" />
+                <img className="" src="/src/comopnents/bgmaina.jpg" alt="Example" />
             </div>
         </div>
     );
