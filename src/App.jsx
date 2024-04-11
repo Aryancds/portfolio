@@ -22,6 +22,10 @@ function App() {
         <Hero />
 
         <Analytics />
+
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7140779895140124"
+          crossorigin="anonymous"></script>
       </div>
     </>
 
