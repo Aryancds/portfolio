@@ -34,23 +34,16 @@ const AnimatedDiv = () => {
 
 
 
-const VideoBackground = () => {
-    return (
-        <video autoPlay muted loop className="absolute inset-0 z-0 w-full h-full object-cover">
-            <source src="your-video-file.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-        </video>
-    );
-};
+
 
 const Hero = () => {
 
 
 
     return (
-        <div className='mx-4 mt-20 sm:grid grid-cols-12 space-x-4 max-w-screen' >
+        <div className='mx-4 mt-20  sm:grid grid-cols-12 space-x-4 max-w-screen' >
 
-            <div className=' rounded-lg h-[620px]  bg-transperent col-span-2' >
+            <div className=' rounded-lg h-[620px]  col-span-2' >
 
                 <div className='bg-gray-200 rounded-lg items-center justify-center h-full grid grid-rows-10'>
 
@@ -129,7 +122,8 @@ const Hero = () => {
             </div>
 
             <div className='p-4 items-center rounded-lg col-span-8 '>
-                <div className='text-center'>
+
+                <div className=''>
 
                     <div className='items-center justify-center rounded-lg bg-gray-200'>
                         <h1 className='text-3xl  font-mono p-4'>Projects</h1>
