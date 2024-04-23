@@ -11,21 +11,14 @@ function App() {
 
   return (
     <>
-      <div className='p-4 h-full' style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        minHeight: '100vh',
-        minWidth: '100vw' // Ensures the image covers the entire viewport
-      }} >
+      <div className='p-4 h-full bg-black'  >
 
         <Hero />
 
         <Analytics />
 
 
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7140779895140124"
-          crossorigin="anonymous"></script>
+
       </div>
     </>
 
@@ -33,3 +26,11 @@ function App() {
 }
 
 export default App
+
+// style={{
+//   backgroundImage: `url(${backgroundImage})`,
+//   backgroundSize: 'cover',
+//   backgroundPosition: 'center',
+//   minHeight: '100vh',
+//   minWidth: '100vw'  Ensures the image covers the entire viewport
+// }}
