@@ -125,17 +125,20 @@ const Hero = () => {
 
                     <div className="bg-transperent p-4 rounded-md transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 shadow-lg">
                         <h2 className="text-xl font-bold mb-2 text-white">Music School Website</h2>
-                        <p className="text-gray-300">Website for music school</p>
+                        <p className="text-gray-300">
+                            The website serves as a window into the music school's offerings, showcasing its diverse programs, talented faculty, and upcoming events. With engaging visuals and easy navigation, visitors can explore classes, learn about instructors, and stay updated on performances, providing a glimpse into the vibrant musical community fostered by the school.
+                        </p>
                     </div>
 
                     <div className="bg-transperent p-4 rounded-md transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 shadow-lg">
-                        <h2 className="text-xl font-bold mb-2 text-white">Project 3</h2>
-                        <p className="text-gray-300">Details about Project 3</p>
+                        <h2 className="text-xl font-bold mb-2 text-white">Tropical Media </h2>
+                        <p className="text-gray-300">"Tropical Media" is a cutting-edge website designed for a graphics design company. It showcases the company's portfolio, services, and expertise in a visually stunning manner. Utilizing React and Tailwind CSS, the site offers a seamless user experience and embodies the company's commitment to innovation and creativity. With its sleek design and intuitive navigation, "Tropical Media" serves as a digital showcase for the company's talent and capabilities, attracting potential clients and collaborators. It reflects the company's dedication to excellence in graphic design and establishes a strong online presence in the competitive design industry.
+                        </p>
                     </div>
 
                     <div className="bg-transperent p-4 rounded-md transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 shadow-lg">
                         <h2 className="text-xl font-bold mb-2 text-white">Project 4</h2>
-                        <p className="text-gray-300">Details about Project 4</p>
+                        <p className="text-gray-300">comming soon....</p>
                     </div>
                 </div>
 
